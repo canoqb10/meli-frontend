@@ -1,0 +1,289 @@
+// Main styles  for the app
+@import 'variables';
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: $black !important;
+  background-color: $gray1 !important;
+}
+
+.app-bar {
+  background-color: $yellow !important;
+}
+
+#layout-container {
+  display: flex;
+  color: $black;
+
+  #layout-main {
+    flex-grow: 1;
+    background-color: $gray1;
+    color: $black;
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  #layout-toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.search-text-field {
+  background-color: $white !important;
+  border-radius: 0 !important;
+  width: 100%;
+  font-size: 18px !important;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: colum wrap;
+  flex: 1;
+  .search-inner {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-start;
+    text-align: left;
+    .search-logo {
+      padding: 0 16px;
+      img {
+        width: 53px;
+        height: 36px;
+        cursor: pointer;
+      }
+    }
+    .search-field {
+      flex: 1;
+      padding-right: 16px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.item-preview-root {
+  cursor: pointer;
+  width: 100% !important;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 7;
+  div {
+    width: 100% !important;
+    flex: 2;
+  }
+
+  div:first-child {
+    margin: 16px;
+    flex: 1;
+  }
+
+  .item-preview-description {
+    flex: 5;
+    margin-top: 16px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    font-size: 18px;
+    div:first-child {
+      padding-bottom: 16px;
+    }
+  }
+
+  .item-preview-place {
+    flex: 1;
+    font-size: 12px;
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+}
+
+.item-preview-padding {
+  padding: 16px 6px;
+}
+
+.item-preview-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  img {
+    width: 180px !important;
+    height: 180px !important;
+    border-radius: 4px;
+  }
+}
+
+.divider {
+  padding: 0 1em !important;
+}
+
+.loader {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.breadcumb-root {
+  padding: 24px 0 16px 0 !important;
+}
+
+.breadcumb-container {
+  font-size: 14px !important;
+}
+
+.breadcumb-text {
+  font-size: 14px !important;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.detail-root {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 32px;
+  .detail-buy-info {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 3;
+    .detail-image {
+      flex: 2;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: row wrap;
+      img {
+        width: 20em;
+        border-radius: 4px;
+      }
+    }
+
+    .detail-buy {
+      flex: 1;
+      padding: 0 1em;
+      width: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      text-align: left !important;
+
+      .detail-condition {
+        padding: 0;
+        padding-top: 32px;
+        padding-bottom: 16px;
+        font-size: 14px;
+      }
+
+      .detail-title {
+        font-size: 24px;
+        width: 80%;
+        font-weight: bold;
+        padding: 0;
+      }
+
+      .detail-price {
+        padding: 32px 0;
+        font-size: 46px;
+      }
+
+      .detail-btn {
+        padding: 10px 0;
+
+        button {
+          background-color: $primary !important;
+          border-radius: 4px !important;
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  .detail-description {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 3;
+    div:first-child {
+      text-align: left !important;
+      flex: 2;
+      padding: 16px 32px;
+      h3 {
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 32px;
+      }
+
+      div .detail-text-description {
+        padding-bottom: 32px;
+      }
+    }
+
+    div {
+      flex: 1;
+    }
+  }
+}
+
+.purchases-container {
+  margin: 2em 0;
+  padding: 2em;
+
+  .purchases-not-found {
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: row wrap;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button-success {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+
+.paginator-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+}
+
+.shopping-button {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font-size: 0.7em;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://localhost:3000/</loc>
+		<lastmod>2022-04-15T16:12:20+03:00</lastmod>
+	</url>
+	<url>
+		<loc>http://localhost:3000/items</loc>
+		<lastmod>2022-04-15T16:12:20+03:00</lastmod>
+	</url>
+	<url>
+		<loc>http://localhost:3000/items/:id</loc>
+		<lastmod>2022-04-15T16:12:20+03:00</lastmod>
+	</url>
+	<url>
+		<loc>http://localhost:3000/items?search</loc>
+		<lastmod>2022-04-15T16:12:20+03:00</lastmod>
+	</url>
+	<url>
+		<loc>http://localhost:3000/purchases</loc>
+		<lastmod>2022-04-15T16:12:20+03:00</lastmod>
+	</url>
+</urlset>
