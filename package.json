@@ -11,7 +11,8 @@
     "test": "jest --config ./jest.config.js --silent",
     "test-all": "npm run lint && npm run type-check && npm test",
     "prestart:prod": "docker-compose build",
-    "start:prod": "docker-compose up"
+    "start:prod": "docker-compose up",
+    "unmount": "docker-compose down"
   },
   "engines": {
     "node": ">=14",

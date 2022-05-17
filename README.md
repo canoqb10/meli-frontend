@@ -2,11 +2,11 @@
 
 This repository is related to technical challenge by Full Stack developer position and it is developed with next technologies:
 
-  * HTML
-  * ReactJS (Typescript)
-  * NextJS (Typescript)
-  * Material UI
-  * CSS (SASS)
+- HTML
+- ReactJS (Typescript)
+- NextJS (Typescript)
+- Material UI
+- CSS (SASS)
 
 ## Table of Contents
 
@@ -14,6 +14,7 @@ This repository is related to technical challenge by Full Stack developer positi
 - [Set Up Project](#set-up-project)
 - [Run Application](#run-application)
 - [Testing](#testing)
+- [Cleaning app](#unmount-application)
 - [Author](#author)
 
 ## Folder Structure
@@ -111,9 +112,7 @@ You should be sure that your docker app is to up and running correctly
 
 Executes the next command:
 
-- On MacOS `sh run.sh`
-- On Windows `sh run.sh`
-- On Linux `sh run.sh`
+- On your Terminal `sh run.sh`
 
 ## Testing
 
@@ -134,8 +133,14 @@ Integration tests suites are configured for this
 
   `npm run test`
 
+## Unmount Application
+
+  It be sure to remove the application that is running. Execute next line
+
+  `npm run unmount`
+  
 ## Author
 
-* Jose Alberto Cano Govea
-* juliojacg@hotmail.com
-* https://www.linkedin.com/in/jose-alberto-cano-govea-4b882370
+- Jose Alberto Cano Govea
+- juliojacg@hotmail.com
+- https://www.linkedin.com/in/jose-alberto-cano-govea-4b882370
