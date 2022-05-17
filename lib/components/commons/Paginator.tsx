@@ -27,7 +27,7 @@ const Paginator = ({ paging, changePagination }: PaginatorProps): JSX.Element =>
 
   if (!paging) {
     return (
-      <div className="paginator-container">
+      <div className="paginator-container" data-testid="paginator-skeleton">
         <Skeleton variant="rect" width={400} height={30} />
       </div>
     )

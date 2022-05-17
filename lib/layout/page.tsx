@@ -17,7 +17,7 @@ export const Page = ({ title, search, children }: PropsWithChildren<PageProps>):
       <Head>
         <title>{capitalizedTitle} | ML-FRONT-END-TEST</title>
       </Head>
-      <h2 hidden>{capitalizedTitle}</h2>
+      <h2 hidden data-testid="title-page">{capitalizedTitle}</h2>
       <AppBar position="fixed" className="app-bar">
         <Grid container direction="row" justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={8}>

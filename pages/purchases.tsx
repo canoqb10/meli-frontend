@@ -49,6 +49,7 @@ export const PurchasesPage = (): JSX.Element => {
     if (!isValidArray(purchases)) {
       return <div className="purchases-not-found">No hay artículos comprados...</div>
     }
+
     return purchases.map(({ amount, total, details }, index) => {
       if (isValidArray(details)) {
         const item = details[0]
@@ -83,7 +84,7 @@ export const PurchasesPage = (): JSX.Element => {
   )
 }
 
-function TabPanel(props) {
+export const TabPanel = (props)  => {
   const { children, value, index, ...other } = props
 
   return (

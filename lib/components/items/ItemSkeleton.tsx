@@ -26,3 +26,4 @@ export const ItemSkeleton = (): JSX.Element => {
     </>
   )
 }
+export default ItemSkeleton

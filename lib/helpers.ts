@@ -29,7 +29,8 @@ export function formatAmount(amount: number, currency: string, lang = 'es-ar'): 
  * @param value Array <unknown>
  * @returns
  */
-export const isValidArray = (value: Array<unknown>): boolean => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const isValidArray = (value: Array<any>): boolean => {
   if (Array.isArray(value) && value.length > 0) {
     return true
   }

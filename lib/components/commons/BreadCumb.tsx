@@ -10,7 +10,7 @@ import { BreadCumbProps } from '../../types'
  */
 export const BreadCumb = ({ categories, separator = '›' }: BreadCumbProps): JSX.Element => {
   if (!Array.isArray(categories) || categories.length === 0) {
-    return <div className="breadcumb-root" />
+    return <div className="breadcumb-root" data-testid="breadcumb-void" />
   }
 
   return (

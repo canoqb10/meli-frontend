@@ -1,6 +1,5 @@
 import moxios from 'moxios'
 import sinon from 'sinon'
-import { formatAmount } from '../lib/helpers'
 import { getItem, searchItems } from '../lib/services'
 
 const categories = ['Bolsas', 'Perros', 'Mascotas']
@@ -31,15 +30,6 @@ const item = {
     },
   },
 }
-describe('General functions helpers', () => {
-  it('Format an amount correctly', () => {
-    const amount = 10
-    const currency = 'ARS'
-
-    const formatAmout = formatAmount(amount, currency)
-    expect(formatAmout.replace(/\s/g, '')).toEqual(`${currency} ${amount}.00`.replace(/\s/g, ''))
-  })
-})
 
 describe('Integration with the API Test', () => {
   let axiosInstance

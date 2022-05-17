@@ -14,6 +14,7 @@ describe('BreadCumb Component', () => {
     component.getByText(categories[4])
 
     expect(component).toHaveProperty('container')
+    expect(component).toBeDefined()
   })
 
   it('Show correct separators ', () => {
@@ -45,5 +46,14 @@ describe('BreadCumb Component', () => {
 
     expect(router.push).toHaveBeenCalledWith(pathname, pathname, options)
     expect(router.push).toHaveBeenCalledTimes(1)
+  })
+
+  it('When categories are not received', () => {
+    const categories = null
+    const separator = '*'
+
+    const component = render(<BreadCumb categories={categories} separator={separator} />, {})
+    const el = component.getByTestId('breadcumb-void')
+    expect(el.childNodes.length).toBe(0)
   })
 })

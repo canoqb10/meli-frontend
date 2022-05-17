@@ -33,5 +33,7 @@ describe('SearchBar Component', () => {
 
     expect(router.push).toHaveBeenCalledWith({ query: { search }, pathname })
     expect(router.push).toHaveBeenCalledTimes(1)
+    expect(router.pathname).toMatch(pathname)
+    expect(router.query.search).toMatch(search)
   })
 })
